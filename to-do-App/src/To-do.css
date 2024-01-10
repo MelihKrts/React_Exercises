@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body {
+    transition: all 0.25s linear;
+}
+
+header {
+    width: 100%;
+    background-color: #dfe6e9;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do-input {
+    padding: 10px;
+    border: solid 1px #d4d7dd;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 50px;
+    width: 33.3%;
+    margin: 15px 0;
+}
+
+.add {
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 15px;
+    background-color: #218838;
+    color: #fff;
+}
+
+.light {
+    background-color: #00C3E6;
+    color: #000;
+}
+
+.dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.to-do-box {
+    width: 100%;
+    background-color: #F8FCFD;
+    border-radius: 0.5rem;
+    color: #005A7D;
+    margin-top: 20px;
+    font-family: "Exo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.title {
+    flex: 1;
+    display: flex;
+}
+
+.order-name {
+    width: 50%;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 400;
+    padding: 5px;
+}
+
+.item-map {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid #bad8e3;
+}
+
+.item-map>div {
+    width: 33.3%;
+    padding: 5px
+}
+
+.item-map:last-child{
+    border: none;
+}
+
+.btn-area {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-area>div {
+    width: 100%;
+}
+
+.item-value{
+    color: #FF9902;
+}
+
+.btn-area > div > svg {
+    font-size: 2rem;
+}
+
+.success {
+    fill: #218838;
+}
+
+.warning {
+    fill: #ffc107;
+}
+
+.danger {
+    fill: #dc3545;
+}
+
+
+@media screen and (max-width:1024px) {
+    .title{
+        flex-direction: column;
+    }
+
+    .order-name{
+        width: 100%;
+    }
+
+    .item-map{
+        flex-direction: column;
+    }
+
+    .item-map > div{
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
