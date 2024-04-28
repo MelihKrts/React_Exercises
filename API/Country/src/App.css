@@ -1,0 +1,171 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+header h2 {
+  text-align:center;
+  margin: 10px 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.w-13 {
+  flex: 1;
+}
+
+.w-23{
+  flex: 2;
+}
+
+.input {
+  border: solid 1px #d4d7dd;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#select{
+  width: 150px;
+  padding: 10px;
+  background-color:#747474;
+  border-radius: 0.5rem;
+  color: #fff;
+  margin:0 50px;
+}
+
+.length {
+  text-align: center;
+}
+
+.btn{
+  width: 150px;
+  border-radius: 5px;
+  padding: 5px;
+  height: 30px;
+  margin-left: 50px;
+}
+
+.country-container{
+  display: grid;
+  max-width: 1140px;
+  grid-template-columns: repeat(2,2fr);
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #7f8fa6;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.img-box{
+  height: 7rem;
+  margin: auto;
+  text-align: center;
+  width: 14rem;
+  margin-top: 15px;
+}
+
+.img-box img {
+  border-radius: 0.3rem;
+  box-shadow: 0 0 0.6rem 0.2rem #f1e1e1;
+  display: block;
+  margin: auto;
+  max-height: 75%;
+  max-width: 75%;
+  min-height: 75%;
+  min-width: 75%;
+}
+
+.country-name{
+  color: orange;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  letter-spacing: .075rem;
+  margin-bottom: 1rem
+}
+
+.country-box{
+  border-radius: 0.2rem;
+  margin: 1rem;
+  text-align: center;
+  background: #fff;
+}
+
+.country-box p {
+  color: #747474;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: .05rem;
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #aaa69d;
+}
+
+.country-box p:last-child{
+  border: none;
+}
+
+.country-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@media screen and (max-width:1024px){
+  .country-container{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
