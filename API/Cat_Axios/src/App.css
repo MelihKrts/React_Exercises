@@ -1,0 +1,109 @@
+* {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #95a5a6;
+  text-align: center;
+}
+
+.cat-wrapper {
+  display: grid;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 3fr);
+  gap: 15px;
+  position: relative;
+}
+
+.cat-box {
+  width: 90%;
+  text-align: left;
+  margin: 0 30px;
+  border-bottom: 1px solid #353b48;
+}
+
+.cat-box:last-child {
+  border: none;
+}
+
+.cat-name {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #0097e6;
+  margin: 5px 10px;
+}
+
+.cat-description {
+  width: 100%;
+}
+
+.cat-description p {
+  text-align: justify;
+  margin: 10px;
+  line-height: 1.6rem;
+}
+
+.cat .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.origin{
+  margin-left: 10px;
+  color: orange;
+  font-weight: 600;
+}
+
+.temperament{
+  margin:10px;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .cat-wrapper{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .cat-box{
+    width: 95%;
+    margin:0 15px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
