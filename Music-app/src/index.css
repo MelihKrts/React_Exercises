@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+audio::-webkit-media-controls-panel,
+audio::-webkit-media-controls-enclosure{
+    border-radius: 0;
+}
+
+audio::-webkit-media-controls-play-button
+{
+    border-radius: 0;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
